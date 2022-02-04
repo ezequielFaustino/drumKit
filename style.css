@@ -7,7 +7,8 @@
 body {
     background-image: url('./img/back.jpg');
     background-size: cover;
-    width: 100vw; /* visao horizontal*/
+    width: 100vw;
+    /* visao horizontal*/
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
 }
@@ -23,13 +24,27 @@ main {
     margin: 20vh auto;
     font-size: calc(5vw + 20px);
     text-shadow: 0 0 10px black,
-                 0 0 10px black,
                  0 0 10px black;
 }
 
 .container {
-    background-color: white;
     width: 90vw;
     height: 100px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.key {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: calc(3vw + 20px);
 }
