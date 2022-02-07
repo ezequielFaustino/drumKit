@@ -50,4 +50,5 @@ main {
     border: 3px solid white;
     user-select: none;
     cursor: pointer;
+    transition: all .3s;
 }
