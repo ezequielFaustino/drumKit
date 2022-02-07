@@ -23,4 +23,14 @@ const createDiv = (text) => {
 //exibir teclas
 const show = (sounds) => Object.keys(sounds).forEach(createDiv); // varrer todos os elementos desse array e criar a tag 'div'
 
+const playSound = (soundKey) => {
+    
+} 
+
+const activeDiv = (event) => {
+    const soundKey = event.target.id;
+    playSound(soundKey);
+}
+
 show(sounds);
+document.getElementById('container').addEventListener('click', activeDiv);
